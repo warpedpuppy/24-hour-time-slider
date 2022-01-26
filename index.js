@@ -28,11 +28,12 @@
 		  errorDiv = document.getElementById('error-window');
 
 
-	startTime.value = 1440 * .25;
+	startTime.value = 1440 * .45;
 	dispenseTime.value = 1440 * .50;
-	acceleratedSlider.value = 1440 * .60;
-	missedDoseSlider.value = 1440 * .65;
-	endTime.value = 1440 * .75;
+	endTime.value = 1440 * .55;
+	acceleratedSlider.value = 1440 * .65;
+	missedDoseSlider.value = 1440 * .70;
+	
 
 	for (let i = 1; i < 24; i ++) {
 		let div = document.createElement('div');
