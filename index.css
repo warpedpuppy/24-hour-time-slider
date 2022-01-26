@@ -20,7 +20,7 @@ body {
   }
   
 
-  [slider] > div > [range] {
+  #range-graphic {
 	position: absolute;
 	left: 0;
 	height: 14px;

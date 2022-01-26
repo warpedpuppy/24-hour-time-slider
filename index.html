@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -15,10 +11,14 @@
 	<body>
 		<div slider id="slider-distance">
 			<div>
-			  <div range id="range-graphic"></div>
+
+			  <div id="range-graphic"></div>
+
 			  <span thumb id="start-time-graphic"></span>
-			  <span thumb style="left:60%;" id="dispense-time-graphic"></span>
-			  <span thumb style="left:90%;" id="end-time-graphic"></span>
+			  <span thumb id="dispense-time-graphic"></span>
+			  <span thumb id="end-time-graphic"></span>
+			  <span thumb id="accelerated-graphic"></span>
+			  <span thumb id="missed-dose-graphic"></span>
 
 			<div sign id="start-time-sign">
 				<span id="value">30</span>
@@ -29,11 +29,21 @@
 			<div sign id="end-time-sign">
 				<span id="value">30</span>
 			</div>
+
+			<div sign id="accelerated-sign">
+				<span id="value">30</span>
+			</div>
+
+			<div sign id="missed-dose-sign">
+				<span id="value">30</span>
+			</div>
 				
 			</div>
-			<input type="range" tabindex="0" max="1440" min="0" step="1" id="slider1" />
-			<input type="range" tabindex="1" max="1440" min="0" step="1" id="slider2" />
-			<input type="range" tabindex="2" max="1440" min="0" step="1" id="slider3" />
+			<input type="range" tabindex="0" max="1440" min="0" step="1" id="start-time-slider" />
+			<input type="range" tabindex="1" max="1440" min="0" step="1" id="dispense-time-slider" />
+			<input type="range" tabindex="2" max="1440" min="0" step="1" id="end-time-slider" />
+			<input type="range" tabindex="2" max="1440" min="0" step="1" id="accelerated-slider" />
+			<input type="range" tabindex="2" max="1440" min="0" step="1" id="missed-dose-slider" />
 		  </div>
 		
 		<script src="index.js" ></script>
