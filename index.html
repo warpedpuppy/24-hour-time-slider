@@ -9,42 +9,79 @@
 		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
-		<div slider id="slider-distance">
-			<div>
+		<div id="blue-shell">
+			<div id="title">lorem ipsum</div>
+			<div id="error-window"></div>
+			<div slider id="slider-distance">
+				<div>
+					<div class="range-graphic-other"></div>
+					<div class="range-graphic-other"></div>
+					<div id="range-graphic"></div>
+					<div id="accelerated-range-graphic"></div>
+					<div id="missed-dose-range-graphic"></div>
 
-			  <div id="range-graphic"></div>
-
-			  <span thumb id="start-time-graphic"></span>
-			  <span thumb id="dispense-time-graphic"></span>
-			  <span thumb id="end-time-graphic"></span>
-			  <span thumb id="accelerated-graphic"></span>
-			  <span thumb id="missed-dose-graphic"></span>
-
-			<div sign id="start-time-sign">
-				<span id="value">30</span>
+					<span thumb id="start-time-graphic" >
+						<div sign id="start-time-sign">start&nbsp;time</div>
+						<span></span>
+						<div time id="start-time-value">0:00</div>
+					</span>
+					<span thumb id="dispense-time-graphic">
+						<div sign id="dispense-time-sign">dispense&nbsp;time</div>
+						<span></span>
+						<div time id="dispense-time-value">0:00</div>
+					</span>
+					<span thumb id="end-time-graphic">
+						<div sign id="end-time-sign">end&nbsp;time</div>
+						<span></span>
+						<div time id="end-time-value">0:00</div>
+					</span>
+					<span thumb id="accelerated-graphic">
+						<div sign id="accelerated-sign">accelerated&nbsp;time</div>
+						<span></span>
+						<div time id="accelerate-value">0:00</div>
+					</span>
+					<span thumb id="missed-dose-graphic">
+						<div sign id="missed-dose-sign">missed&nbsp;dose</div>
+						<span></span>
+						<div time id="missed-dose-value">0:00</div>
+					</span>
+				</div>
+				<input type="range" tabindex="0" max="1440" min="0" step="1" id="start-time-slider" />
+				<input type="range" tabindex="1" max="1440" min="0" step="1" id="dispense-time-slider" />
+				<input type="range" tabindex="2" max="1440" min="0" step="1" id="end-time-slider" />
+				<input type="range" tabindex="2" max="1440" min="0" step="1" id="accelerated-slider" />
+				<input type="range" tabindex="2" max="1440" min="0" step="1" id="missed-dose-slider" />
 			</div>
-			<div sign id="dispense-time-sign">
-				<span id="value">30</span>
+			<div class="accessibility-link">
+				<a href="#" id="open-manual">manual input</a>
+				<div id="manual-entry">
+					<div>
+						<label>start time</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>end time</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>dispense time</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>accelerated alarm</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>missed dose alarm</label>
+						<input type="text" />
+					</div>
+				</div>
 			</div>
-			<div sign id="end-time-sign">
-				<span id="value">30</span>
+			<div class="button-div">
+				<button>cancel</button>
+				<button>save changes</button>
 			</div>
-
-			<div sign id="accelerated-sign">
-				<span id="value">30</span>
-			</div>
-
-			<div sign id="missed-dose-sign">
-				<span id="value">30</span>
-			</div>
-				
-			</div>
-			<input type="range" tabindex="0" max="1440" min="0" step="1" id="start-time-slider" />
-			<input type="range" tabindex="1" max="1440" min="0" step="1" id="dispense-time-slider" />
-			<input type="range" tabindex="2" max="1440" min="0" step="1" id="end-time-slider" />
-			<input type="range" tabindex="2" max="1440" min="0" step="1" id="accelerated-slider" />
-			<input type="range" tabindex="2" max="1440" min="0" step="1" id="missed-dose-slider" />
-		  </div>
+		</div>
 		
 		<script src="index.js" ></script>
 	</body>
