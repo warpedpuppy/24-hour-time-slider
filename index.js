@@ -131,6 +131,8 @@
 		missedDoseRangeGraphic.style.left = percString(+acceleratedSlider.value);
 	}
 
+	
+
 	function startTimeHandler () {
 		if (this.value >= (+max - spacer)) {
 			this.value = Math.min(this.value, +max - spacer);
@@ -163,6 +165,7 @@
 			missedDoseGraphic.style.left = percString(missedDoseSlider.value);
 			handleSigns (missedDoseValueSign, missedDoseSign, missedDoseSlider.value)
 		}
+
 		errorHandler();
 		guanteeNoOverlap()
 	}
