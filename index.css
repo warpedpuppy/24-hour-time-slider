@@ -298,11 +298,9 @@ body {
 }
 
 .accessibility-link a {
-	text-decoration: none;
 	font: normal normal normal 12px/14px Arial;
 	font-style: italic;
 
-	color: #333;
 }
 
 #manual-entry {
